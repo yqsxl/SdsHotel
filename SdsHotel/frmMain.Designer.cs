@@ -64,11 +64,30 @@
             this.dpLeft = new DevExpress.XtraBars.Docking.DockPanel();
             this.dockPanel1_Container = new DevExpress.XtraBars.Docking.ControlContainer();
             this.nbcMenus = new DevExpress.XtraNavBar.NavBarControl();
+            this.nbgSystem = new DevExpress.XtraNavBar.NavBarGroup();
+            this.nbiMain = new DevExpress.XtraNavBar.NavBarItem();
             this.ssStatu = new System.Windows.Forms.StatusStrip();
             this.tsslUserInfo = new System.Windows.Forms.ToolStripStatusLabel();
             this.tsslCompany = new System.Windows.Forms.ToolStripStatusLabel();
             this.xtMMTabs = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
             this.dlfMain = new DevExpress.LookAndFeel.DefaultLookAndFeel(this.components);
+            this.nvgHotelMgr = new DevExpress.XtraNavBar.NavBarGroup();
+            this.nbiRoomMgr = new DevExpress.XtraNavBar.NavBarItem();
+            this.nbiRoomPriceMgr = new DevExpress.XtraNavBar.NavBarItem();
+            this.nbiNewRoomType = new DevExpress.XtraNavBar.NavBarItem();
+            this.nbgOrderMgr = new DevExpress.XtraNavBar.NavBarGroup();
+            this.nbgReportMgr = new DevExpress.XtraNavBar.NavBarGroup();
+            this.nbiOrderReport = new DevExpress.XtraNavBar.NavBarItem();
+            this.nbiFinanceReport = new DevExpress.XtraNavBar.NavBarItem();
+            this.nbiAllOrder = new DevExpress.XtraNavBar.NavBarItem();
+            this.nbiArrangeRoomOrder = new DevExpress.XtraNavBar.NavBarItem();
+            this.nbiRoomCheckOut = new DevExpress.XtraNavBar.NavBarItem();
+            this.nbiOrderCompleted = new DevExpress.XtraNavBar.NavBarItem();
+            this.nbiOrderReminder = new DevExpress.XtraNavBar.NavBarItem();
+            this.bbiMain = new DevExpress.XtraBars.BarButtonItem();
+            this.nbiUserInfo = new DevExpress.XtraNavBar.NavBarItem();
+            this.nbiHotelInfo = new DevExpress.XtraNavBar.NavBarItem();
+            this.nbiModifyPwd = new DevExpress.XtraNavBar.NavBarItem();
             ((System.ComponentModel.ISupportInitialize)(this.rcManager)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dmMain)).BeginInit();
             this.dpLeft.SuspendLayout();
@@ -103,11 +122,12 @@
             this.bbiCompletedOrder,
             this.bbiOrderReminder,
             this.bbiReportOrder,
-            this.bbiFinanceReport});
+            this.bbiFinanceReport,
+            this.bbiMain});
             this.rcManager.ItemsVertAlign = DevExpress.Utils.VertAlignment.Bottom;
             this.rcManager.LargeImages = this.imgMenu;
             this.rcManager.Location = new System.Drawing.Point(0, 0);
-            this.rcManager.MaxItemId = 18;
+            this.rcManager.MaxItemId = 19;
             this.rcManager.Name = "rcManager";
             this.rcManager.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.rpSystem,
@@ -296,6 +316,7 @@
             // 
             // rpgSystemn
             // 
+            this.rpgSystemn.ItemLinks.Add(this.bbiMain);
             this.rpgSystemn.ItemLinks.Add(this.bbiUserInfo);
             this.rpgSystemn.ItemLinks.Add(this.bbiModifyPwd);
             this.rpgSystemn.Name = "rpgSystemn";
@@ -405,14 +426,51 @@
             // 
             // nbcMenus
             // 
-            this.nbcMenus.ActiveGroup = null;
+            this.nbcMenus.ActiveGroup = this.nbgSystem;
             this.nbcMenus.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.nbcMenus.Groups.AddRange(new DevExpress.XtraNavBar.NavBarGroup[] {
+            this.nbgSystem,
+            this.nvgHotelMgr,
+            this.nbgOrderMgr,
+            this.nbgReportMgr});
+            this.nbcMenus.Items.AddRange(new DevExpress.XtraNavBar.NavBarItem[] {
+            this.nbiMain,
+            this.nbiRoomMgr,
+            this.nbiRoomPriceMgr,
+            this.nbiNewRoomType,
+            this.nbiOrderReport,
+            this.nbiFinanceReport,
+            this.nbiAllOrder,
+            this.nbiArrangeRoomOrder,
+            this.nbiRoomCheckOut,
+            this.nbiOrderCompleted,
+            this.nbiOrderReminder,
+            this.nbiUserInfo,
+            this.nbiHotelInfo,
+            this.nbiModifyPwd});
             this.nbcMenus.Location = new System.Drawing.Point(0, 0);
             this.nbcMenus.Name = "nbcMenus";
             this.nbcMenus.OptionsNavPane.ExpandedWidth = 192;
             this.nbcMenus.Size = new System.Drawing.Size(192, 382);
+            this.nbcMenus.SmallImages = this.imgMenu;
             this.nbcMenus.TabIndex = 0;
-            this.nbcMenus.Text = "navBarControl1";
+            // 
+            // nbgSystem
+            // 
+            this.nbgSystem.Caption = "系统菜单";
+            this.nbgSystem.ItemLinks.AddRange(new DevExpress.XtraNavBar.NavBarItemLink[] {
+            new DevExpress.XtraNavBar.NavBarItemLink(this.nbiMain),
+            new DevExpress.XtraNavBar.NavBarItemLink(this.nbiUserInfo),
+            new DevExpress.XtraNavBar.NavBarItemLink(this.nbiHotelInfo),
+            new DevExpress.XtraNavBar.NavBarItemLink(this.nbiModifyPwd)});
+            this.nbgSystem.Name = "nbgSystem";
+            // 
+            // nbiMain
+            // 
+            this.nbiMain.Caption = "主界面";
+            this.nbiMain.Name = "nbiMain";
+            this.nbiMain.SmallImage = ((System.Drawing.Image)(resources.GetObject("nbiMain.SmallImage")));
+            this.nbiMain.Tag = "";
             // 
             // ssStatu
             // 
@@ -448,6 +506,120 @@
             // 
             this.dlfMain.LookAndFeel.SkinName = "Office 2010 Blue";
             this.dlfMain.LookAndFeel.TouchUIMode = DevExpress.LookAndFeel.TouchUIMode.False;
+            // 
+            // nvgHotelMgr
+            // 
+            this.nvgHotelMgr.Caption = "客房管理";
+            this.nvgHotelMgr.ItemLinks.AddRange(new DevExpress.XtraNavBar.NavBarItemLink[] {
+            new DevExpress.XtraNavBar.NavBarItemLink(this.nbiRoomMgr),
+            new DevExpress.XtraNavBar.NavBarItemLink(this.nbiRoomPriceMgr),
+            new DevExpress.XtraNavBar.NavBarItemLink(this.nbiNewRoomType)});
+            this.nvgHotelMgr.Name = "nvgHotelMgr";
+            // 
+            // nbiRoomMgr
+            // 
+            this.nbiRoomMgr.Caption = "房间管理";
+            this.nbiRoomMgr.Name = "nbiRoomMgr";
+            this.nbiRoomMgr.SmallImage = ((System.Drawing.Image)(resources.GetObject("nbiRoomMgr.SmallImage")));
+            // 
+            // nbiRoomPriceMgr
+            // 
+            this.nbiRoomPriceMgr.Caption = "房价管理";
+            this.nbiRoomPriceMgr.Name = "nbiRoomPriceMgr";
+            this.nbiRoomPriceMgr.SmallImage = ((System.Drawing.Image)(resources.GetObject("nbiRoomPriceMgr.SmallImage")));
+            // 
+            // nbiNewRoomType
+            // 
+            this.nbiNewRoomType.Caption = "申请新增房型";
+            this.nbiNewRoomType.Name = "nbiNewRoomType";
+            this.nbiNewRoomType.SmallImage = ((System.Drawing.Image)(resources.GetObject("nbiNewRoomType.SmallImage")));
+            // 
+            // nbgOrderMgr
+            // 
+            this.nbgOrderMgr.Caption = "订单管理";
+            this.nbgOrderMgr.ItemLinks.AddRange(new DevExpress.XtraNavBar.NavBarItemLink[] {
+            new DevExpress.XtraNavBar.NavBarItemLink(this.nbiAllOrder),
+            new DevExpress.XtraNavBar.NavBarItemLink(this.nbiArrangeRoomOrder),
+            new DevExpress.XtraNavBar.NavBarItemLink(this.nbiRoomCheckOut),
+            new DevExpress.XtraNavBar.NavBarItemLink(this.nbiOrderCompleted),
+            new DevExpress.XtraNavBar.NavBarItemLink(this.nbiOrderReminder)});
+            this.nbgOrderMgr.Name = "nbgOrderMgr";
+            // 
+            // nbgReportMgr
+            // 
+            this.nbgReportMgr.Caption = "报表管理";
+            this.nbgReportMgr.ItemLinks.AddRange(new DevExpress.XtraNavBar.NavBarItemLink[] {
+            new DevExpress.XtraNavBar.NavBarItemLink(this.nbiOrderReport),
+            new DevExpress.XtraNavBar.NavBarItemLink(this.nbiFinanceReport)});
+            this.nbgReportMgr.Name = "nbgReportMgr";
+            // 
+            // nbiOrderReport
+            // 
+            this.nbiOrderReport.Caption = "订单统计报表";
+            this.nbiOrderReport.Name = "nbiOrderReport";
+            this.nbiOrderReport.SmallImage = ((System.Drawing.Image)(resources.GetObject("nbiOrderReport.SmallImage")));
+            // 
+            // nbiFinanceReport
+            // 
+            this.nbiFinanceReport.Caption = "财务对账报表";
+            this.nbiFinanceReport.Name = "nbiFinanceReport";
+            this.nbiFinanceReport.SmallImage = ((System.Drawing.Image)(resources.GetObject("nbiFinanceReport.SmallImage")));
+            // 
+            // nbiAllOrder
+            // 
+            this.nbiAllOrder.Caption = "全部订单";
+            this.nbiAllOrder.Name = "nbiAllOrder";
+            this.nbiAllOrder.SmallImage = ((System.Drawing.Image)(resources.GetObject("nbiAllOrder.SmallImage")));
+            // 
+            // nbiArrangeRoomOrder
+            // 
+            this.nbiArrangeRoomOrder.Caption = "安排房间订单";
+            this.nbiArrangeRoomOrder.Name = "nbiArrangeRoomOrder";
+            this.nbiArrangeRoomOrder.SmallImage = ((System.Drawing.Image)(resources.GetObject("nbiArrangeRoomOrder.SmallImage")));
+            // 
+            // nbiRoomCheckOut
+            // 
+            this.nbiRoomCheckOut.Caption = "申请退房订单";
+            this.nbiRoomCheckOut.Name = "nbiRoomCheckOut";
+            this.nbiRoomCheckOut.SmallImage = ((System.Drawing.Image)(resources.GetObject("nbiRoomCheckOut.SmallImage")));
+            // 
+            // nbiOrderCompleted
+            // 
+            this.nbiOrderCompleted.Caption = "已完成订单";
+            this.nbiOrderCompleted.Name = "nbiOrderCompleted";
+            this.nbiOrderCompleted.SmallImage = ((System.Drawing.Image)(resources.GetObject("nbiOrderCompleted.SmallImage")));
+            // 
+            // nbiOrderReminder
+            // 
+            this.nbiOrderReminder.Caption = "订单提醒";
+            this.nbiOrderReminder.Name = "nbiOrderReminder";
+            this.nbiOrderReminder.SmallImage = ((System.Drawing.Image)(resources.GetObject("nbiOrderReminder.SmallImage")));
+            // 
+            // bbiMain
+            // 
+            this.bbiMain.Caption = "主界面";
+            this.bbiMain.Id = 18;
+            this.bbiMain.LargeImageIndex = 33;
+            this.bbiMain.Name = "bbiMain";
+            // 
+            // nbiUserInfo
+            // 
+            this.nbiUserInfo.Caption = "账号信息";
+            this.nbiUserInfo.Name = "nbiUserInfo";
+            this.nbiUserInfo.SmallImage = ((System.Drawing.Image)(resources.GetObject("nbiUserInfo.SmallImage")));
+            this.nbiUserInfo.Tag = "frmUserInfo";
+            // 
+            // nbiHotelInfo
+            // 
+            this.nbiHotelInfo.Caption = "宾馆信息";
+            this.nbiHotelInfo.Name = "nbiHotelInfo";
+            this.nbiHotelInfo.SmallImage = ((System.Drawing.Image)(resources.GetObject("nbiHotelInfo.SmallImage")));
+            // 
+            // nbiModifyPwd
+            // 
+            this.nbiModifyPwd.Caption = "修改密码";
+            this.nbiModifyPwd.Name = "nbiModifyPwd";
+            this.nbiModifyPwd.SmallImage = ((System.Drawing.Image)(resources.GetObject("nbiModifyPwd.SmallImage")));
             // 
             // frmMain
             // 
@@ -518,5 +690,24 @@
         private System.Windows.Forms.ToolStripStatusLabel tsslCompany;
         private DevExpress.XtraTabbedMdi.XtraTabbedMdiManager xtMMTabs;
         private DevExpress.LookAndFeel.DefaultLookAndFeel dlfMain;
+        private DevExpress.XtraNavBar.NavBarGroup nbgSystem;
+        private DevExpress.XtraNavBar.NavBarItem nbiMain;
+        private DevExpress.XtraNavBar.NavBarGroup nvgHotelMgr;
+        private DevExpress.XtraNavBar.NavBarItem nbiRoomMgr;
+        private DevExpress.XtraNavBar.NavBarItem nbiRoomPriceMgr;
+        private DevExpress.XtraNavBar.NavBarItem nbiNewRoomType;
+        private DevExpress.XtraNavBar.NavBarGroup nbgOrderMgr;
+        private DevExpress.XtraNavBar.NavBarGroup nbgReportMgr;
+        private DevExpress.XtraNavBar.NavBarItem nbiOrderReport;
+        private DevExpress.XtraNavBar.NavBarItem nbiFinanceReport;
+        private DevExpress.XtraNavBar.NavBarItem nbiAllOrder;
+        private DevExpress.XtraNavBar.NavBarItem nbiArrangeRoomOrder;
+        private DevExpress.XtraNavBar.NavBarItem nbiRoomCheckOut;
+        private DevExpress.XtraNavBar.NavBarItem nbiOrderCompleted;
+        private DevExpress.XtraNavBar.NavBarItem nbiOrderReminder;
+        private DevExpress.XtraBars.BarButtonItem bbiMain;
+        private DevExpress.XtraNavBar.NavBarItem nbiUserInfo;
+        private DevExpress.XtraNavBar.NavBarItem nbiHotelInfo;
+        private DevExpress.XtraNavBar.NavBarItem nbiModifyPwd;
     }
 }
