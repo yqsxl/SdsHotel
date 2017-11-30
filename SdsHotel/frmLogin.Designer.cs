@@ -93,6 +93,7 @@
             // 
             // btnExit
             // 
+            this.btnExit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
             this.btnExit.Location = new System.Drawing.Point(332, 193);
             this.btnExit.Name = "btnExit";
@@ -102,6 +103,7 @@
             // 
             // btnLogin
             // 
+            this.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLogin.Image = ((System.Drawing.Image)(resources.GetObject("btnLogin.Image")));
             this.btnLogin.Location = new System.Drawing.Point(234, 193);
             this.btnLogin.Name = "btnLogin";
@@ -111,6 +113,7 @@
             // 
             // btnRegister
             // 
+            this.btnRegister.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRegister.Image = ((System.Drawing.Image)(resources.GetObject("btnRegister.Image")));
             this.btnRegister.Location = new System.Drawing.Point(385, 245);
             this.btnRegister.Name = "btnRegister";
@@ -134,6 +137,7 @@
             this.Controls.Add(this.pbUser);
             this.Controls.Add(this.lblTitle);
             this.Name = "frmLogin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmLogin";
             ((System.ComponentModel.ISupportInitialize)(this.pbPwd)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbUser)).EndInit();
