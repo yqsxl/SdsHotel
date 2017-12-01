@@ -57,7 +57,10 @@ namespace SdsHotel
         /// <param name="e"></param>
         private void BtnRegister_Click(object sender, EventArgs e)
         {
-            
+            frmRegister frmReg = new frmRegister();
+            frmReg.LoginForm = this;
+            frmReg.Show();
+            Hide();
         }
 
         #endregion
