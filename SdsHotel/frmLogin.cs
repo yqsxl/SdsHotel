@@ -47,7 +47,9 @@ namespace SdsHotel
         /// <param name="e"></param>
         private void BtnLogin_Click(object sender, EventArgs e)
         {
-            
+            frmMain main = new frmMain();
+            main.Show();
+            Hide();
         }
         
         /// <summary>

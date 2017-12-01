@@ -49,6 +49,7 @@
             this.bbiOrderReminder = new DevExpress.XtraBars.BarButtonItem();
             this.bbiReportOrder = new DevExpress.XtraBars.BarButtonItem();
             this.bbiFinanceReport = new DevExpress.XtraBars.BarButtonItem();
+            this.bbiMain = new DevExpress.XtraBars.BarButtonItem();
             this.rpSystem = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.rpgSystemn = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.rpgHotel = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -66,28 +67,27 @@
             this.nbcMenus = new DevExpress.XtraNavBar.NavBarControl();
             this.nbgSystem = new DevExpress.XtraNavBar.NavBarGroup();
             this.nbiMain = new DevExpress.XtraNavBar.NavBarItem();
-            this.ssStatu = new System.Windows.Forms.StatusStrip();
-            this.tsslUserInfo = new System.Windows.Forms.ToolStripStatusLabel();
-            this.tsslCompany = new System.Windows.Forms.ToolStripStatusLabel();
-            this.xtMMTabs = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
-            this.dlfMain = new DevExpress.LookAndFeel.DefaultLookAndFeel(this.components);
+            this.nbiUserInfo = new DevExpress.XtraNavBar.NavBarItem();
+            this.nbiHotelInfo = new DevExpress.XtraNavBar.NavBarItem();
+            this.nbiModifyPwd = new DevExpress.XtraNavBar.NavBarItem();
             this.nvgHotelMgr = new DevExpress.XtraNavBar.NavBarGroup();
             this.nbiRoomMgr = new DevExpress.XtraNavBar.NavBarItem();
             this.nbiRoomPriceMgr = new DevExpress.XtraNavBar.NavBarItem();
             this.nbiNewRoomType = new DevExpress.XtraNavBar.NavBarItem();
             this.nbgOrderMgr = new DevExpress.XtraNavBar.NavBarGroup();
-            this.nbgReportMgr = new DevExpress.XtraNavBar.NavBarGroup();
-            this.nbiOrderReport = new DevExpress.XtraNavBar.NavBarItem();
-            this.nbiFinanceReport = new DevExpress.XtraNavBar.NavBarItem();
             this.nbiAllOrder = new DevExpress.XtraNavBar.NavBarItem();
             this.nbiArrangeRoomOrder = new DevExpress.XtraNavBar.NavBarItem();
             this.nbiRoomCheckOut = new DevExpress.XtraNavBar.NavBarItem();
             this.nbiOrderCompleted = new DevExpress.XtraNavBar.NavBarItem();
             this.nbiOrderReminder = new DevExpress.XtraNavBar.NavBarItem();
-            this.bbiMain = new DevExpress.XtraBars.BarButtonItem();
-            this.nbiUserInfo = new DevExpress.XtraNavBar.NavBarItem();
-            this.nbiHotelInfo = new DevExpress.XtraNavBar.NavBarItem();
-            this.nbiModifyPwd = new DevExpress.XtraNavBar.NavBarItem();
+            this.nbgReportMgr = new DevExpress.XtraNavBar.NavBarGroup();
+            this.nbiOrderReport = new DevExpress.XtraNavBar.NavBarItem();
+            this.nbiFinanceReport = new DevExpress.XtraNavBar.NavBarItem();
+            this.ssStatu = new System.Windows.Forms.StatusStrip();
+            this.tsslUserInfo = new System.Windows.Forms.ToolStripStatusLabel();
+            this.tsslCompany = new System.Windows.Forms.ToolStripStatusLabel();
+            this.xtMMTabs = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
+            this.dlfMain = new DevExpress.LookAndFeel.DefaultLookAndFeel(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.rcManager)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dmMain)).BeginInit();
             this.dpLeft.SuspendLayout();
@@ -193,6 +193,7 @@
             this.bbiUserInfo.Id = 1;
             this.bbiUserInfo.LargeImageIndex = 14;
             this.bbiUserInfo.Name = "bbiUserInfo";
+            this.bbiUserInfo.Tag = "frmUserInfo";
             // 
             // bbiModifyPwd
             // 
@@ -303,6 +304,14 @@
             this.bbiFinanceReport.Id = 17;
             this.bbiFinanceReport.LargeImageIndex = 31;
             this.bbiFinanceReport.Name = "bbiFinanceReport";
+            // 
+            // bbiMain
+            // 
+            this.bbiMain.Caption = "主界面";
+            this.bbiMain.Id = 18;
+            this.bbiMain.LargeImageIndex = 33;
+            this.bbiMain.Name = "bbiMain";
+            this.bbiMain.Tag = "frmIndex";
             // 
             // rpSystem
             // 
@@ -458,6 +467,7 @@
             // nbgSystem
             // 
             this.nbgSystem.Caption = "系统菜单";
+            this.nbgSystem.Expanded = true;
             this.nbgSystem.ItemLinks.AddRange(new DevExpress.XtraNavBar.NavBarItemLink[] {
             new DevExpress.XtraNavBar.NavBarItemLink(this.nbiMain),
             new DevExpress.XtraNavBar.NavBarItemLink(this.nbiUserInfo),
@@ -470,42 +480,26 @@
             this.nbiMain.Caption = "主界面";
             this.nbiMain.Name = "nbiMain";
             this.nbiMain.SmallImage = ((System.Drawing.Image)(resources.GetObject("nbiMain.SmallImage")));
-            this.nbiMain.Tag = "";
+            this.nbiMain.Tag = "frmIndex";
             // 
-            // ssStatu
+            // nbiUserInfo
             // 
-            this.ssStatu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tsslUserInfo,
-            this.tsslCompany});
-            this.ssStatu.Location = new System.Drawing.Point(0, 556);
-            this.ssStatu.Name = "ssStatu";
-            this.ssStatu.Size = new System.Drawing.Size(848, 22);
-            this.ssStatu.TabIndex = 2;
+            this.nbiUserInfo.Caption = "账号信息";
+            this.nbiUserInfo.Name = "nbiUserInfo";
+            this.nbiUserInfo.SmallImage = ((System.Drawing.Image)(resources.GetObject("nbiUserInfo.SmallImage")));
+            this.nbiUserInfo.Tag = "frmUserInfo";
             // 
-            // tsslUserInfo
+            // nbiHotelInfo
             // 
-            this.tsslUserInfo.Image = ((System.Drawing.Image)(resources.GetObject("tsslUserInfo.Image")));
-            this.tsslUserInfo.Name = "tsslUserInfo";
-            this.tsslUserInfo.Size = new System.Drawing.Size(16, 17);
+            this.nbiHotelInfo.Caption = "宾馆信息";
+            this.nbiHotelInfo.Name = "nbiHotelInfo";
+            this.nbiHotelInfo.SmallImage = ((System.Drawing.Image)(resources.GetObject("nbiHotelInfo.SmallImage")));
             // 
-            // tsslCompany
+            // nbiModifyPwd
             // 
-            this.tsslCompany.Image = ((System.Drawing.Image)(resources.GetObject("tsslCompany.Image")));
-            this.tsslCompany.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.tsslCompany.Name = "tsslCompany";
-            this.tsslCompany.Size = new System.Drawing.Size(817, 17);
-            this.tsslCompany.Spring = true;
-            this.tsslCompany.Text = "北京华仁颐居信息科技有限公司";
-            this.tsslCompany.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // xtMMTabs
-            // 
-            this.xtMMTabs.MdiParent = this;
-            // 
-            // dlfMain
-            // 
-            this.dlfMain.LookAndFeel.SkinName = "Office 2010 Blue";
-            this.dlfMain.LookAndFeel.TouchUIMode = DevExpress.LookAndFeel.TouchUIMode.False;
+            this.nbiModifyPwd.Caption = "修改密码";
+            this.nbiModifyPwd.Name = "nbiModifyPwd";
+            this.nbiModifyPwd.SmallImage = ((System.Drawing.Image)(resources.GetObject("nbiModifyPwd.SmallImage")));
             // 
             // nvgHotelMgr
             // 
@@ -545,26 +539,6 @@
             new DevExpress.XtraNavBar.NavBarItemLink(this.nbiOrderReminder)});
             this.nbgOrderMgr.Name = "nbgOrderMgr";
             // 
-            // nbgReportMgr
-            // 
-            this.nbgReportMgr.Caption = "报表管理";
-            this.nbgReportMgr.ItemLinks.AddRange(new DevExpress.XtraNavBar.NavBarItemLink[] {
-            new DevExpress.XtraNavBar.NavBarItemLink(this.nbiOrderReport),
-            new DevExpress.XtraNavBar.NavBarItemLink(this.nbiFinanceReport)});
-            this.nbgReportMgr.Name = "nbgReportMgr";
-            // 
-            // nbiOrderReport
-            // 
-            this.nbiOrderReport.Caption = "订单统计报表";
-            this.nbiOrderReport.Name = "nbiOrderReport";
-            this.nbiOrderReport.SmallImage = ((System.Drawing.Image)(resources.GetObject("nbiOrderReport.SmallImage")));
-            // 
-            // nbiFinanceReport
-            // 
-            this.nbiFinanceReport.Caption = "财务对账报表";
-            this.nbiFinanceReport.Name = "nbiFinanceReport";
-            this.nbiFinanceReport.SmallImage = ((System.Drawing.Image)(resources.GetObject("nbiFinanceReport.SmallImage")));
-            // 
             // nbiAllOrder
             // 
             this.nbiAllOrder.Caption = "全部订单";
@@ -595,31 +569,60 @@
             this.nbiOrderReminder.Name = "nbiOrderReminder";
             this.nbiOrderReminder.SmallImage = ((System.Drawing.Image)(resources.GetObject("nbiOrderReminder.SmallImage")));
             // 
-            // bbiMain
+            // nbgReportMgr
             // 
-            this.bbiMain.Caption = "主界面";
-            this.bbiMain.Id = 18;
-            this.bbiMain.LargeImageIndex = 33;
-            this.bbiMain.Name = "bbiMain";
+            this.nbgReportMgr.Caption = "报表管理";
+            this.nbgReportMgr.ItemLinks.AddRange(new DevExpress.XtraNavBar.NavBarItemLink[] {
+            new DevExpress.XtraNavBar.NavBarItemLink(this.nbiOrderReport),
+            new DevExpress.XtraNavBar.NavBarItemLink(this.nbiFinanceReport)});
+            this.nbgReportMgr.Name = "nbgReportMgr";
             // 
-            // nbiUserInfo
+            // nbiOrderReport
             // 
-            this.nbiUserInfo.Caption = "账号信息";
-            this.nbiUserInfo.Name = "nbiUserInfo";
-            this.nbiUserInfo.SmallImage = ((System.Drawing.Image)(resources.GetObject("nbiUserInfo.SmallImage")));
-            this.nbiUserInfo.Tag = "frmUserInfo";
+            this.nbiOrderReport.Caption = "订单统计报表";
+            this.nbiOrderReport.Name = "nbiOrderReport";
+            this.nbiOrderReport.SmallImage = ((System.Drawing.Image)(resources.GetObject("nbiOrderReport.SmallImage")));
             // 
-            // nbiHotelInfo
+            // nbiFinanceReport
             // 
-            this.nbiHotelInfo.Caption = "宾馆信息";
-            this.nbiHotelInfo.Name = "nbiHotelInfo";
-            this.nbiHotelInfo.SmallImage = ((System.Drawing.Image)(resources.GetObject("nbiHotelInfo.SmallImage")));
+            this.nbiFinanceReport.Caption = "财务对账报表";
+            this.nbiFinanceReport.Name = "nbiFinanceReport";
+            this.nbiFinanceReport.SmallImage = ((System.Drawing.Image)(resources.GetObject("nbiFinanceReport.SmallImage")));
             // 
-            // nbiModifyPwd
+            // ssStatu
             // 
-            this.nbiModifyPwd.Caption = "修改密码";
-            this.nbiModifyPwd.Name = "nbiModifyPwd";
-            this.nbiModifyPwd.SmallImage = ((System.Drawing.Image)(resources.GetObject("nbiModifyPwd.SmallImage")));
+            this.ssStatu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsslUserInfo,
+            this.tsslCompany});
+            this.ssStatu.Location = new System.Drawing.Point(0, 556);
+            this.ssStatu.Name = "ssStatu";
+            this.ssStatu.Size = new System.Drawing.Size(848, 22);
+            this.ssStatu.TabIndex = 2;
+            // 
+            // tsslUserInfo
+            // 
+            this.tsslUserInfo.Image = ((System.Drawing.Image)(resources.GetObject("tsslUserInfo.Image")));
+            this.tsslUserInfo.Name = "tsslUserInfo";
+            this.tsslUserInfo.Size = new System.Drawing.Size(16, 17);
+            // 
+            // tsslCompany
+            // 
+            this.tsslCompany.Image = ((System.Drawing.Image)(resources.GetObject("tsslCompany.Image")));
+            this.tsslCompany.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.tsslCompany.Name = "tsslCompany";
+            this.tsslCompany.Size = new System.Drawing.Size(817, 17);
+            this.tsslCompany.Spring = true;
+            this.tsslCompany.Text = "北京华仁颐居信息科技有限公司";
+            this.tsslCompany.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // xtMMTabs
+            // 
+            this.xtMMTabs.MdiParent = this;
+            // 
+            // dlfMain
+            // 
+            this.dlfMain.LookAndFeel.SkinName = "Office 2010 Blue";
+            this.dlfMain.LookAndFeel.TouchUIMode = DevExpress.LookAndFeel.TouchUIMode.False;
             // 
             // frmMain
             // 
@@ -633,7 +636,6 @@
             this.MaximizeBox = false;
             this.Name = "frmMain";
             this.Ribbon = this.rcManager;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "掌上日租酒店系统(V1.0)";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.rcManager)).EndInit();
