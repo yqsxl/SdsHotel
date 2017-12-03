@@ -9,6 +9,7 @@ namespace SdsHotel.Utility
     {
         public const string _namespace= "SdsHotel";
         public const string _program = "SdsHotel.exe";
+        public const string _exitSys = "bbiExitSystem";
     }
 }
 

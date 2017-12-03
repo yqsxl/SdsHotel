@@ -22,12 +22,6 @@ namespace SdsHotel
             InitializeComponent();
             RegisterEvent();//注册事件
             InitSkinGallery();//初始化皮肤
-            InitIndex();//初始化登录后的首页
-        }
-
-        private void InitIndex()
-        {
-            
         }
 
         #region 注册事件
@@ -35,17 +29,39 @@ namespace SdsHotel
         {
             //主窗体加载初始化数据
             Load += FrmMain_Load;
+            //退出系统
+            FormClosed += FrmMain_FormClosed;
             //左侧菜单链接事件
             nbcMenus.LinkClicked += NbcMenus_LinkClicked;
             //双击关闭Tab页事件
             xtMMTabs.MouseDown += XtMMTabs_MouseDown;
             //Menu菜单单击事件
             rcManager.ItemClick += RcManager_ItemClick;
+
         }
 
+        /// <summary>
+        ///主窗体关闭界面
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void FrmMain_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            if (ShowQuestion("您确定要退出系统吗？") == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
+        /// <summary>
+        /// 初始化
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void FrmMain_Load(object sender, EventArgs e)
         {
             tsslUserInfo.Text = $"当前登录用户:[]";
+
+            InitIndex();//默认打开主界面
         }
 
         #region 单击菜单打开对应的窗体
@@ -114,6 +130,18 @@ namespace SdsHotel
 
         #endregion
 
+        #region Method
+        /// <summary>
+        /// 主界面初始化
+        /// </summary>
+        private void InitIndex()
+        {
+            var index = new frmIndex();
+            index.MdiParent = this;
+            index.Show();
+        }
+        #endregion
+
         #region 操作Form窗体的方法
 
         /// <summary>
@@ -131,7 +159,7 @@ namespace SdsHotel
 
 
         #region 通过反射机制打开菜单对应的窗体
-        private void OpenChildForm(string name,string caption)
+        private void OpenChildForm(string name, string caption)
         {
             if (!FormIsExists(name))
             {

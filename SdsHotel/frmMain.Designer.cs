@@ -38,7 +38,6 @@
             this.bbiHotel = new DevExpress.XtraBars.BarButtonItem();
             this.bbiSync = new DevExpress.XtraBars.BarButtonItem();
             this.rgbSkin = new DevExpress.XtraBars.SkinRibbonGalleryBarItem();
-            this.bbiExitSystem = new DevExpress.XtraBars.BarButtonItem();
             this.bbiRoomMgr = new DevExpress.XtraBars.BarButtonItem();
             this.bbiPriceMgr = new DevExpress.XtraBars.BarButtonItem();
             this.bbiNewRoom = new DevExpress.XtraBars.BarButtonItem();
@@ -53,7 +52,6 @@
             this.rpSystem = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.rpgSystemn = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.rpgHotel = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.rpgOther = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.rpgSelectSkin = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.rpHotelMgr = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.rpgHotelMgr = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -112,7 +110,6 @@
             this.bbiHotel,
             this.bbiSync,
             this.rgbSkin,
-            this.bbiExitSystem,
             this.bbiRoomMgr,
             this.bbiPriceMgr,
             this.bbiNewRoom,
@@ -228,13 +225,6 @@
             this.rgbSkin.Id = 6;
             this.rgbSkin.Name = "rgbSkin";
             // 
-            // bbiExitSystem
-            // 
-            this.bbiExitSystem.Caption = "退出系统";
-            this.bbiExitSystem.Id = 7;
-            this.bbiExitSystem.LargeImageIndex = 23;
-            this.bbiExitSystem.Name = "bbiExitSystem";
-            // 
             // bbiRoomMgr
             // 
             this.bbiRoomMgr.Caption = "房间管理";
@@ -318,7 +308,6 @@
             this.rpSystem.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.rpgSystemn,
             this.rpgHotel,
-            this.rpgOther,
             this.rpgSelectSkin});
             this.rpSystem.Name = "rpSystem";
             this.rpSystem.Text = "系统";
@@ -337,12 +326,6 @@
             this.rpgHotel.ItemLinks.Add(this.bbiSync);
             this.rpgHotel.Name = "rpgHotel";
             this.rpgHotel.Text = "酒店信息操作";
-            // 
-            // rpgOther
-            // 
-            this.rpgOther.ItemLinks.Add(this.bbiExitSystem);
-            this.rpgOther.Name = "rpgOther";
-            this.rpgOther.Text = "其他操作";
             // 
             // rpgSelectSkin
             // 
@@ -504,6 +487,7 @@
             // nvgHotelMgr
             // 
             this.nvgHotelMgr.Caption = "客房管理";
+            this.nvgHotelMgr.Expanded = true;
             this.nvgHotelMgr.ItemLinks.AddRange(new DevExpress.XtraNavBar.NavBarItemLink[] {
             new DevExpress.XtraNavBar.NavBarItemLink(this.nbiRoomMgr),
             new DevExpress.XtraNavBar.NavBarItemLink(this.nbiRoomPriceMgr),
@@ -531,6 +515,7 @@
             // nbgOrderMgr
             // 
             this.nbgOrderMgr.Caption = "订单管理";
+            this.nbgOrderMgr.Expanded = true;
             this.nbgOrderMgr.ItemLinks.AddRange(new DevExpress.XtraNavBar.NavBarItemLink[] {
             new DevExpress.XtraNavBar.NavBarItemLink(this.nbiAllOrder),
             new DevExpress.XtraNavBar.NavBarItemLink(this.nbiArrangeRoomOrder),
@@ -572,6 +557,7 @@
             // nbgReportMgr
             // 
             this.nbgReportMgr.Caption = "报表管理";
+            this.nbgReportMgr.Expanded = true;
             this.nbgReportMgr.ItemLinks.AddRange(new DevExpress.XtraNavBar.NavBarItemLink[] {
             new DevExpress.XtraNavBar.NavBarItemLink(this.nbiOrderReport),
             new DevExpress.XtraNavBar.NavBarItemLink(this.nbiFinanceReport)});
@@ -664,8 +650,6 @@
         private DevExpress.XtraBars.BarButtonItem bbiSync;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup rpgHotel;
         private DevExpress.XtraBars.SkinRibbonGalleryBarItem rgbSkin;
-        private DevExpress.XtraBars.BarButtonItem bbiExitSystem;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup rpgOther;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup rpgSelectSkin;
         private DevExpress.XtraBars.Ribbon.RibbonPage rpHotelMgr;
         private DevExpress.XtraBars.Ribbon.RibbonPage rpOrderMgr;
