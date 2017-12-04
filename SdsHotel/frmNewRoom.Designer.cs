@@ -30,8 +30,6 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tpRoom = new System.Windows.Forms.TabPage();
-            this.tpRoomPic = new System.Windows.Forms.TabPage();
-            this.tpInRoom = new System.Windows.Forms.TabPage();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.comboBoxEdit4 = new DevExpress.XtraEditors.ComboBoxEdit();
@@ -50,23 +48,24 @@
             this.lblZC = new System.Windows.Forms.Label();
             this.txtHotelName = new DevExpress.XtraEditors.TextEdit();
             this.lblRoomName = new System.Windows.Forms.Label();
+            this.tpRoomPic = new System.Windows.Forms.TabPage();
+            this.tpInRoom = new System.Windows.Forms.TabPage();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.comboBoxEdit8 = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.comboBoxEdit9 = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.comboBoxEdit7 = new DevExpress.XtraEditors.ComboBoxEdit();
             this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
             this.label8 = new System.Windows.Forms.Label();
             this.comboBoxEdit6 = new DevExpress.XtraEditors.ComboBoxEdit();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.comboBoxEdit7 = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.comboBoxEdit8 = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.comboBoxEdit9 = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.tpRoom.SuspendLayout();
-            this.tpInRoom.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit4.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit3.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit1.Properties)).BeginInit();
@@ -75,11 +74,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtHotelArea.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cbZC.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtHotelName.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit6.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit7.Properties)).BeginInit();
+            this.tpInRoom.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit8.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit9.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit7.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit6.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -121,40 +121,6 @@
             this.tpRoom.TabIndex = 0;
             this.tpRoom.Text = "房间信息";
             this.tpRoom.UseVisualStyleBackColor = true;
-            // 
-            // tpRoomPic
-            // 
-            this.tpRoomPic.Location = new System.Drawing.Point(4, 22);
-            this.tpRoomPic.Name = "tpRoomPic";
-            this.tpRoomPic.Padding = new System.Windows.Forms.Padding(3);
-            this.tpRoomPic.Size = new System.Drawing.Size(933, 399);
-            this.tpRoomPic.TabIndex = 1;
-            this.tpRoomPic.Text = "房间图片";
-            this.tpRoomPic.UseVisualStyleBackColor = true;
-            // 
-            // tpInRoom
-            // 
-            this.tpInRoom.Controls.Add(this.textBox2);
-            this.tpInRoom.Controls.Add(this.label15);
-            this.tpInRoom.Controls.Add(this.label14);
-            this.tpInRoom.Controls.Add(this.label13);
-            this.tpInRoom.Controls.Add(this.comboBoxEdit8);
-            this.tpInRoom.Controls.Add(this.comboBoxEdit9);
-            this.tpInRoom.Controls.Add(this.label11);
-            this.tpInRoom.Controls.Add(this.label12);
-            this.tpInRoom.Controls.Add(this.comboBoxEdit7);
-            this.tpInRoom.Controls.Add(this.textEdit1);
-            this.tpInRoom.Controls.Add(this.label8);
-            this.tpInRoom.Controls.Add(this.comboBoxEdit6);
-            this.tpInRoom.Controls.Add(this.label9);
-            this.tpInRoom.Controls.Add(this.label10);
-            this.tpInRoom.Location = new System.Drawing.Point(4, 22);
-            this.tpInRoom.Name = "tpInRoom";
-            this.tpInRoom.Padding = new System.Windows.Forms.Padding(3);
-            this.tpInRoom.Size = new System.Drawing.Size(933, 399);
-            this.tpInRoom.TabIndex = 2;
-            this.tpInRoom.Text = "入住说明";
-            this.tpInRoom.UseVisualStyleBackColor = true;
             // 
             // textBox1
             // 
@@ -321,6 +287,123 @@
             this.lblRoomName.TabIndex = 84;
             this.lblRoomName.Text = "房间名称：";
             // 
+            // tpRoomPic
+            // 
+            this.tpRoomPic.Location = new System.Drawing.Point(4, 22);
+            this.tpRoomPic.Name = "tpRoomPic";
+            this.tpRoomPic.Padding = new System.Windows.Forms.Padding(3);
+            this.tpRoomPic.Size = new System.Drawing.Size(933, 399);
+            this.tpRoomPic.TabIndex = 1;
+            this.tpRoomPic.Text = "房间图片";
+            this.tpRoomPic.UseVisualStyleBackColor = true;
+            // 
+            // tpInRoom
+            // 
+            this.tpInRoom.Controls.Add(this.textBox2);
+            this.tpInRoom.Controls.Add(this.label15);
+            this.tpInRoom.Controls.Add(this.label14);
+            this.tpInRoom.Controls.Add(this.label13);
+            this.tpInRoom.Controls.Add(this.comboBoxEdit8);
+            this.tpInRoom.Controls.Add(this.comboBoxEdit9);
+            this.tpInRoom.Controls.Add(this.label11);
+            this.tpInRoom.Controls.Add(this.label12);
+            this.tpInRoom.Controls.Add(this.comboBoxEdit7);
+            this.tpInRoom.Controls.Add(this.textEdit1);
+            this.tpInRoom.Controls.Add(this.label8);
+            this.tpInRoom.Controls.Add(this.comboBoxEdit6);
+            this.tpInRoom.Controls.Add(this.label9);
+            this.tpInRoom.Controls.Add(this.label10);
+            this.tpInRoom.Location = new System.Drawing.Point(4, 22);
+            this.tpInRoom.Name = "tpInRoom";
+            this.tpInRoom.Padding = new System.Windows.Forms.Padding(3);
+            this.tpInRoom.Size = new System.Drawing.Size(933, 399);
+            this.tpInRoom.TabIndex = 2;
+            this.tpInRoom.Text = "入住说明";
+            this.tpInRoom.UseVisualStyleBackColor = true;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(73, 171);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(435, 136);
+            this.textBox2.TabIndex = 108;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(12, 171);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(67, 13);
+            this.label15.TabIndex = 107;
+            this.label15.Text = "入住提示：";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(315, 71);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(43, 13);
+            this.label14.TabIndex = 106;
+            this.label14.Text = "分之前";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(315, 30);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(43, 13);
+            this.label13.TabIndex = 105;
+            this.label13.Text = "分之后";
+            // 
+            // comboBoxEdit8
+            // 
+            this.comboBoxEdit8.Location = new System.Drawing.Point(209, 71);
+            this.comboBoxEdit8.Name = "comboBoxEdit8";
+            this.comboBoxEdit8.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.comboBoxEdit8.Properties.LookAndFeel.TouchUIMode = DevExpress.LookAndFeel.TouchUIMode.False;
+            this.comboBoxEdit8.Size = new System.Drawing.Size(77, 20);
+            this.comboBoxEdit8.TabIndex = 104;
+            // 
+            // comboBoxEdit9
+            // 
+            this.comboBoxEdit9.Location = new System.Drawing.Point(73, 72);
+            this.comboBoxEdit9.Name = "comboBoxEdit9";
+            this.comboBoxEdit9.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.comboBoxEdit9.Properties.LookAndFeel.TouchUIMode = DevExpress.LookAndFeel.TouchUIMode.False;
+            this.comboBoxEdit9.Size = new System.Drawing.Size(77, 20);
+            this.comboBoxEdit9.TabIndex = 103;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(172, 76);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(31, 13);
+            this.label11.TabIndex = 102;
+            this.label11.Text = "时：";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(12, 76);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(67, 13);
+            this.label12.TabIndex = 101;
+            this.label12.Text = "退房时间：";
+            // 
+            // comboBoxEdit7
+            // 
+            this.comboBoxEdit7.Location = new System.Drawing.Point(209, 25);
+            this.comboBoxEdit7.Name = "comboBoxEdit7";
+            this.comboBoxEdit7.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.comboBoxEdit7.Properties.LookAndFeel.TouchUIMode = DevExpress.LookAndFeel.TouchUIMode.False;
+            this.comboBoxEdit7.Size = new System.Drawing.Size(77, 20);
+            this.comboBoxEdit7.TabIndex = 100;
+            // 
             // textEdit1
             // 
             this.textEdit1.Location = new System.Drawing.Point(73, 124);
@@ -366,89 +449,6 @@
             this.label10.TabIndex = 92;
             this.label10.Text = "入住时间：";
             // 
-            // comboBoxEdit7
-            // 
-            this.comboBoxEdit7.Location = new System.Drawing.Point(209, 25);
-            this.comboBoxEdit7.Name = "comboBoxEdit7";
-            this.comboBoxEdit7.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.comboBoxEdit7.Properties.LookAndFeel.TouchUIMode = DevExpress.LookAndFeel.TouchUIMode.False;
-            this.comboBoxEdit7.Size = new System.Drawing.Size(77, 20);
-            this.comboBoxEdit7.TabIndex = 100;
-            // 
-            // comboBoxEdit8
-            // 
-            this.comboBoxEdit8.Location = new System.Drawing.Point(209, 71);
-            this.comboBoxEdit8.Name = "comboBoxEdit8";
-            this.comboBoxEdit8.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.comboBoxEdit8.Properties.LookAndFeel.TouchUIMode = DevExpress.LookAndFeel.TouchUIMode.False;
-            this.comboBoxEdit8.Size = new System.Drawing.Size(77, 20);
-            this.comboBoxEdit8.TabIndex = 104;
-            // 
-            // comboBoxEdit9
-            // 
-            this.comboBoxEdit9.Location = new System.Drawing.Point(73, 72);
-            this.comboBoxEdit9.Name = "comboBoxEdit9";
-            this.comboBoxEdit9.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.comboBoxEdit9.Properties.LookAndFeel.TouchUIMode = DevExpress.LookAndFeel.TouchUIMode.False;
-            this.comboBoxEdit9.Size = new System.Drawing.Size(77, 20);
-            this.comboBoxEdit9.TabIndex = 103;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(172, 76);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(31, 13);
-            this.label11.TabIndex = 102;
-            this.label11.Text = "时：";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(12, 76);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(67, 13);
-            this.label12.TabIndex = 101;
-            this.label12.Text = "退房时间：";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(315, 30);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(43, 13);
-            this.label13.TabIndex = 105;
-            this.label13.Text = "分之后";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(315, 71);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(43, 13);
-            this.label14.TabIndex = 106;
-            this.label14.Text = "分之前";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(12, 171);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(67, 13);
-            this.label15.TabIndex = 107;
-            this.label15.Text = "入住提示：";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(73, 171);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(435, 136);
-            this.textBox2.TabIndex = 108;
-            // 
             // frmNewRoom
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -461,8 +461,6 @@
             this.tabControl1.ResumeLayout(false);
             this.tpRoom.ResumeLayout(false);
             this.tpRoom.PerformLayout();
-            this.tpInRoom.ResumeLayout(false);
-            this.tpInRoom.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit4.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit3.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit1.Properties)).EndInit();
@@ -471,11 +469,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtHotelArea.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cbZC.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtHotelName.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit6.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit7.Properties)).EndInit();
+            this.tpInRoom.ResumeLayout(false);
+            this.tpInRoom.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit8.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit9.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit7.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit6.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
