@@ -198,6 +198,7 @@
             this.bbiModifyPwd.Id = 2;
             this.bbiModifyPwd.LargeImageIndex = 26;
             this.bbiModifyPwd.Name = "bbiModifyPwd";
+            this.bbiModifyPwd.Tag = "frmModifyPwd";
             // 
             // barButtonItem2
             // 
@@ -211,6 +212,7 @@
             this.bbiHotel.Id = 4;
             this.bbiHotel.LargeImageIndex = 40;
             this.bbiHotel.Name = "bbiHotel";
+            this.bbiHotel.Tag = "frmHotelInfo";
             // 
             // bbiSync
             // 
@@ -231,6 +233,7 @@
             this.bbiRoomMgr.Id = 8;
             this.bbiRoomMgr.LargeImageIndex = 39;
             this.bbiRoomMgr.Name = "bbiRoomMgr";
+            this.bbiRoomMgr.Tag = "frmRoomMgr";
             // 
             // bbiPriceMgr
             // 
@@ -238,6 +241,7 @@
             this.bbiPriceMgr.Id = 9;
             this.bbiPriceMgr.LargeImageIndex = 24;
             this.bbiPriceMgr.Name = "bbiPriceMgr";
+            this.bbiPriceMgr.Tag = "frmHotelPrice";
             // 
             // bbiNewRoom
             // 
@@ -245,6 +249,7 @@
             this.bbiNewRoom.Id = 10;
             this.bbiNewRoom.LargeImageIndex = 22;
             this.bbiNewRoom.Name = "bbiNewRoom";
+            this.bbiNewRoom.Tag = "frmNewRoom";
             // 
             // bbiAllOrder
             // 
@@ -477,12 +482,14 @@
             this.nbiHotelInfo.Caption = "宾馆信息";
             this.nbiHotelInfo.Name = "nbiHotelInfo";
             this.nbiHotelInfo.SmallImage = ((System.Drawing.Image)(resources.GetObject("nbiHotelInfo.SmallImage")));
+            this.nbiHotelInfo.Tag = "frmHotelInfo";
             // 
             // nbiModifyPwd
             // 
             this.nbiModifyPwd.Caption = "修改密码";
             this.nbiModifyPwd.Name = "nbiModifyPwd";
             this.nbiModifyPwd.SmallImage = ((System.Drawing.Image)(resources.GetObject("nbiModifyPwd.SmallImage")));
+            this.nbiModifyPwd.Tag = "frmModifyPwd";
             // 
             // nvgHotelMgr
             // 
@@ -499,18 +506,21 @@
             this.nbiRoomMgr.Caption = "房间管理";
             this.nbiRoomMgr.Name = "nbiRoomMgr";
             this.nbiRoomMgr.SmallImage = ((System.Drawing.Image)(resources.GetObject("nbiRoomMgr.SmallImage")));
+            this.nbiRoomMgr.Tag = "frmRoomMgr";
             // 
             // nbiRoomPriceMgr
             // 
             this.nbiRoomPriceMgr.Caption = "房价管理";
             this.nbiRoomPriceMgr.Name = "nbiRoomPriceMgr";
             this.nbiRoomPriceMgr.SmallImage = ((System.Drawing.Image)(resources.GetObject("nbiRoomPriceMgr.SmallImage")));
+            this.nbiRoomPriceMgr.Tag = "frmHotelPrice";
             // 
             // nbiNewRoomType
             // 
             this.nbiNewRoomType.Caption = "申请新增房型";
             this.nbiNewRoomType.Name = "nbiNewRoomType";
             this.nbiNewRoomType.SmallImage = ((System.Drawing.Image)(resources.GetObject("nbiNewRoomType.SmallImage")));
+            this.nbiNewRoomType.Tag = "frmNewRoom";
             // 
             // nbgOrderMgr
             // 

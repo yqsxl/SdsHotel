@@ -1,6 +1,6 @@
 ﻿namespace SdsHotel
 {
-    partial class frmIndex
+    partial class frmHotelPrice
     {
         /// <summary>
         /// Required designer variable.
@@ -30,13 +30,13 @@
         {
             this.SuspendLayout();
             // 
-            // frmIndex
+            // frmHotelPrice
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1116, 662);
-            this.Name = "frmIndex";
-            this.Text = "主界面";
+            this.ClientSize = new System.Drawing.Size(801, 442);
+            this.Name = "frmHotelPrice";
+            this.Text = "";
             this.ResumeLayout(false);
 
         }

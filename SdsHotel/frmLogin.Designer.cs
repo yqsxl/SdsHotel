@@ -127,7 +127,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayoutStore = System.Windows.Forms.ImageLayout.Tile;
             this.BackgroundImageStore = global::SdsHotel.Properties.Resources._506438182902520753;
-            this.ClientSize = new System.Drawing.Size(501, 338);
+            this.ClientSize = new System.Drawing.Size(495, 335);
             this.Controls.Add(this.btnRegister);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnLogin);
@@ -136,8 +136,8 @@
             this.Controls.Add(this.pbPwd);
             this.Controls.Add(this.pbUser);
             this.Controls.Add(this.lblTitle);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "frmLogin";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmLogin";
             ((System.ComponentModel.ISupportInitialize)(this.pbPwd)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbUser)).EndInit();

@@ -70,7 +70,7 @@
             this.gbHotelA.Controls.Add(this.txtHotelName);
             this.gbHotelA.Controls.Add(this.lblRealname);
             this.gbHotelA.Controls.Add(this.lblUserName);
-            this.gbHotelA.Location = new System.Drawing.Point(22, 86);
+            this.gbHotelA.Location = new System.Drawing.Point(12, 39);
             this.gbHotelA.Name = "gbHotelA";
             this.gbHotelA.Size = new System.Drawing.Size(456, 194);
             this.gbHotelA.TabIndex = 0;
@@ -222,7 +222,7 @@
             this.btnSubmit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnSubmit.Appearance.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.btnSubmit.Appearance.Options.UseFont = true;
-            this.btnSubmit.Location = new System.Drawing.Point(254, 295);
+            this.btnSubmit.Location = new System.Drawing.Point(260, 261);
             this.btnSubmit.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.Size = new System.Drawing.Size(74, 25);
@@ -233,7 +233,7 @@
             // 
             this.btnBack.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnBack.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnBack.Location = new System.Drawing.Point(347, 295);
+            this.btnBack.Location = new System.Drawing.Point(353, 261);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(75, 25);
             this.btnBack.TabIndex = 14;
@@ -245,12 +245,11 @@
             this.Appearance.Options.UseBackColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(495, 335);
+            this.ClientSize = new System.Drawing.Size(495, 298);
             this.Controls.Add(this.btnSubmit);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.gbHotelA);
             this.Name = "frmRegister";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmRegister";
             this.gbHotelA.ResumeLayout(false);
             this.gbHotelA.PerformLayout();

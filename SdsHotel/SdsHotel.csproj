@@ -198,6 +198,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmHotelInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHotelInfo.Designer.cs">
+      <DependentUpon>frmHotelInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHotelPrice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHotelPrice.Designer.cs">
+      <DependentUpon>frmHotelPrice.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmIndex.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -216,6 +228,18 @@
     <Compile Include="frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmModifyPwd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmModifyPwd.Designer.cs">
+      <DependentUpon>frmModifyPwd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNewRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNewRoom.Designer.cs">
+      <DependentUpon>frmNewRoom.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmRegister.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -228,6 +252,12 @@
     <Compile Include="FrmRibbonBase.Designer.cs">
       <DependentUpon>FrmRibbonBase.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmRoomMgr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRoomMgr.Designer.cs">
+      <DependentUpon>frmRoomMgr.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmUserInfo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -237,6 +267,12 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModel\HotelRegisterInfo.cs" />
+    <EmbeddedResource Include="frmHotelInfo.resx">
+      <DependentUpon>frmHotelInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHotelPrice.resx">
+      <DependentUpon>frmHotelPrice.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmIndex.resx">
       <DependentUpon>frmIndex.cs</DependentUpon>
     </EmbeddedResource>
@@ -245,6 +281,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmModifyPwd.resx">
+      <DependentUpon>frmModifyPwd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNewRoom.resx">
+      <DependentUpon>frmNewRoom.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmRegister.resx">
       <DependentUpon>frmRegister.cs</DependentUpon>
