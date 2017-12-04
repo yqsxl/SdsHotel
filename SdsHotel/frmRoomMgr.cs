@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace SdsHotel
 {
-    public partial class frmRoomMgr : Form
+    public partial class frmRoomMgr : FrmRibbonBase
     {
         public frmRoomMgr()
         {

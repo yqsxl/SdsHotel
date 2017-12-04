@@ -31,15 +31,15 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmModifyPwd));
             this.lblOldPwd = new System.Windows.Forms.Label();
             this.txtOldPwd = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
+            this.txtNewPwd = new DevExpress.XtraEditors.TextEdit();
             this.lblNewPwd = new System.Windows.Forms.Label();
-            this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
+            this.txtConfirmPwd = new DevExpress.XtraEditors.TextEdit();
             this.label1 = new System.Windows.Forms.Label();
             this.btnClear = new System.Windows.Forms.Button();
             this.btnSubmit = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.txtOldPwd.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtNewPwd.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtConfirmPwd.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // lblOldPwd
@@ -60,13 +60,13 @@
             this.txtOldPwd.Size = new System.Drawing.Size(217, 20);
             this.txtOldPwd.TabIndex = 1;
             // 
-            // textEdit1
+            // txtNewPwd
             // 
-            this.textEdit1.Location = new System.Drawing.Point(97, 67);
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Properties.LookAndFeel.TouchUIMode = DevExpress.LookAndFeel.TouchUIMode.False;
-            this.textEdit1.Size = new System.Drawing.Size(217, 20);
-            this.textEdit1.TabIndex = 3;
+            this.txtNewPwd.Location = new System.Drawing.Point(97, 67);
+            this.txtNewPwd.Name = "txtNewPwd";
+            this.txtNewPwd.Properties.LookAndFeel.TouchUIMode = DevExpress.LookAndFeel.TouchUIMode.False;
+            this.txtNewPwd.Size = new System.Drawing.Size(217, 20);
+            this.txtNewPwd.TabIndex = 3;
             // 
             // lblNewPwd
             // 
@@ -78,13 +78,13 @@
             this.lblNewPwd.TabIndex = 2;
             this.lblNewPwd.Text = "新密码：";
             // 
-            // textEdit2
+            // txtConfirmPwd
             // 
-            this.textEdit2.Location = new System.Drawing.Point(97, 118);
-            this.textEdit2.Name = "textEdit2";
-            this.textEdit2.Properties.LookAndFeel.TouchUIMode = DevExpress.LookAndFeel.TouchUIMode.False;
-            this.textEdit2.Size = new System.Drawing.Size(217, 20);
-            this.textEdit2.TabIndex = 5;
+            this.txtConfirmPwd.Location = new System.Drawing.Point(97, 118);
+            this.txtConfirmPwd.Name = "txtConfirmPwd";
+            this.txtConfirmPwd.Properties.LookAndFeel.TouchUIMode = DevExpress.LookAndFeel.TouchUIMode.False;
+            this.txtConfirmPwd.Size = new System.Drawing.Size(217, 20);
+            this.txtConfirmPwd.TabIndex = 5;
             // 
             // label1
             // 
@@ -125,17 +125,17 @@
             this.ClientSize = new System.Drawing.Size(383, 225);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.btnSubmit);
-            this.Controls.Add(this.textEdit2);
+            this.Controls.Add(this.txtConfirmPwd);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textEdit1);
+            this.Controls.Add(this.txtNewPwd);
             this.Controls.Add(this.lblNewPwd);
             this.Controls.Add(this.txtOldPwd);
             this.Controls.Add(this.lblOldPwd);
             this.Name = "frmModifyPwd";
             this.Text = "frmModifyPwd";
             ((System.ComponentModel.ISupportInitialize)(this.txtOldPwd.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtNewPwd.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtConfirmPwd.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -145,9 +145,9 @@
 
         private System.Windows.Forms.Label lblOldPwd;
         private DevExpress.XtraEditors.TextEdit txtOldPwd;
-        private DevExpress.XtraEditors.TextEdit textEdit1;
+        private DevExpress.XtraEditors.TextEdit txtNewPwd;
         private System.Windows.Forms.Label lblNewPwd;
-        private DevExpress.XtraEditors.TextEdit textEdit2;
+        private DevExpress.XtraEditors.TextEdit txtConfirmPwd;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnSubmit;
         private System.Windows.Forms.Button btnClear;
